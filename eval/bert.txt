@@ -1,0 +1,31 @@
+agb-de
+Accuracy: 0.950993
+Precision: 0.500000
+Recall: 0.270270
+F1 score: 0.350877
+[[708  10]
+ [ 27  10]]
+tp: 10
+tn: 708
+fp: 10
+fn: 27
+
+agb-de-under
+Accuracy: 0.895652
+Precision: 0.512195
+Recall: 0.567568
+F1 score: 0.538462
+[[288  20]
+ [ 16  21]]
+tp: 21
+tn: 288
+fp: 20
+fn: 16
+
+agb-de-under-full
+Accuracy: 0.936424
+Precision: 0.358974
+Recall: 0.378378
+F1 score: 0.368421
+[[693  25]
+ [ 23  14]]
