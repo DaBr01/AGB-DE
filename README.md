@@ -13,7 +13,7 @@
 
 ## Data
 
-The dataset consists of 3,764 clauses from 93 German consumer standard form contracts. Each clause has been annotated with its topic(s) and whether the clause is valid (0) or potentially void (1). For more details about the data please take a look at the datasheet.
+The dataset consists of 3,764 clauses from 93 German consumer standard form contracts. Each clause has been annotated with its topic(s) and whether the clause is valid (0) or potentially void (1). For more details about the data please take a look at the [datasheet](https://github.com/DaBr01/AGB-DE/wiki).
 
 ## Baseline Automated Legal Assessment
 
