@@ -1,5 +1,7 @@
 # AGB-DE: A Corpus for the Automated Legal Assessment of Clauses in German Consumer Contracts
 
+AGB-DE is a legal NLP corpus for the automated detection of potentially void clauses in German standard form consumer contracts. It consists of 3,764 clauses that have been legally assessed by experts and annotated as potentially void (1) or valid (0). Additionally, each the topic auf clauses have been annotated. This repository contains the corpus itself, code that was uses to anonymize the data, code that was used to train and evaluate baseline models, and the results of the baseline evaluation itself.
+
 ## How to cite
 ```
 @inproceedings{braun-matthes-2024-agb,
@@ -13,7 +15,36 @@
 
 ## Data
 
-The dataset consists of 3,764 clauses from 93 German consumer standard form contracts. Each clause has been annotated with its topic(s) and whether the clause is valid (0) or potentially void (1). For more details about the data please take a look at the [datasheet](https://github.com/DaBr01/AGB-DE/wiki).
+The dataset consists of 3,764 clauses from 93 German consumer standard form contracts. Each clause has been annotated with its topic(s) and whether the clause is valid (0) or potentially void (1). The table below shows the distribution of topics among the clauses and the share of potentially void clauses per topic. For more details about the data please take a look at the [paper](https://arxiv.org/abs/2406.06809) and the [datasheet](https://github.com/DaBr01/AGB-DE/wiki).
+
+| topic |	number of clauses |	share_void|
+|-------|-----------------|----------|
+|age| 	20	| 0|
+|applicability	|148	|2.03|
+|applicableLaw|	87|	3.45|
+|arbitration|	97|	1.03|
+|changes	|9	|11.11|
+|codeOfConduct|	29	|0|
+|conclusionOfContract|	557	|5.92|
+|contractLanguage|	41	|0|
+|delivery|	475	|7.16|
+|description|	46	|0|
+|disposal|	36	|0|
+|intellectualProperty|	39	|0|
+|language|	9	|11.11|
+|liability	|211	|9|
+|party|	0	|0|
+|payment|	642	|6.07|
+|personalData|	115	|0.87|
+|placeOfJurisdiction|	53|	1.89|
+|prices|	147	|1.36|
+|retentionOfTitle|	125	|2.4|
+|severability	|35	|11.43|
+|textStorage|	57	|1.75|
+|warranty|	314	|6.37|
+|withdrawal	|506	|3.75|
+|Total lvl 1|	3798	|4.8|
+
 
 ## Baseline Automated Legal Assessment
 
@@ -38,7 +69,7 @@ The dataset consists of 3,764 clauses from 93 German consumer standard form cont
 
 ## How to use
 
-See also [example.py](usage/example.py).
+The easiest way to use the corpus is through the [dataset](https://huggingface.co/datasets/d4br4/agb-de) and [baseline](https://huggingface.co/d4br4/AGBert) model provided on 🤗 Huggingface. See also [example.py](usage/example.py).
 
 ```python
 from datasets import load_dataset
