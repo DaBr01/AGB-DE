@@ -1,6 +1,6 @@
 # AGB-DE: A Corpus for the Automated Legal Assessment of Clauses in German Consumer Contracts
 
-AGB-DE is a legal NLP corpus for the automated detection of potentially void clauses in German standard form consumer contracts. It consists of 3,764 clauses that have been legally assessed by experts and annotated as potentially void (1) or valid (0). Additionally, each the topic auf clauses have been annotated. This repository contains the corpus itself, code that was uses to anonymize the data, code that was used to train and evaluate baseline models, and the results of the baseline evaluation itself.
+AGB-DE is a legal NLP corpus for the automated detection of potentially void clauses in German standard form consumer contracts. It consists of 3,764 clauses that have been legally assessed by experts and annotated as potentially void (1) or valid (0). Additionally, each clause is annotated with a topic label. This repository contains the corpus itself, code that was uses to anonymize the data, code that was used to train and evaluate baseline models, and the results of the baseline evaluation itself.
 
 ## How to cite
 ```
