@@ -5,11 +5,21 @@ AGB-DE is a legal NLP corpus for the automated detection of potentially void cla
 ## How to cite
 ```
 @inproceedings{braun-matthes-2024-agb,
-    title = "AGB-DE: A Corpus for the Automated Legal Assessment of Clauses in German Consumer Contracts", 
-    author = "Braun, Daniel and Matthes, Florian",
+    title = "{AGB}-{DE}: A Corpus for the Automated Legal Assessment of Clauses in {G}erman Consumer Contracts",
+    author = "Braun, Daniel  and
+      Matthes, Florian",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
     booktitle = "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = aug,
     year = "2024",
-    publisher = "Association for Computational Linguistics"
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.acl-long.559/",
+    doi = "10.18653/v1/2024.acl-long.559",
+    pages = "10389--10405",
+    abstract = "Legal tasks and datasets are often used as benchmarks for the capabilities of language models. However, openly available annotated datasets are rare. In this paper, we introduce AGB-DE, a corpus of 3,764 clauses from German consumer contracts that have been annotated and legally assessed by legal experts. Together with the data, we present a first baseline for the task of detecting potentially void clauses, comparing the performance of an SVM baseline with three fine-tuned open language models and the performance of GPT-3.5. Our results show the challenging nature of the task, with no approach exceeding an F1-score of 0.54. While the fine-tuned models often performed better with regard to precision, GPT-3.5 outperformed the other approaches with regard to recall. An analysis of the errors indicates that one of the main challenges could be the correct interpretation of complex clauses, rather than the decision boundaries of what is permissible and what is not."
 }
 ```
 
